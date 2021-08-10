@@ -1,0 +1,31 @@
+*{
+    font-family: Marker Felt, fantasy;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/redcamo.jpg);
+    background-size: cover;
+}
+h1{
+    font-size: 100px;
+    margin-top: 280px;
+    color: white;
+}
+p{
+    font-size: 25px;
+    margin-top: 70px;
+    color: white;
+}
+.credits{
+    font-size: 12px;
+    margin-top: 404px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.image{
+    margin-top: -1000px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 1400px;
+    border-radius: 25px;
+    height: 500px;
+}
