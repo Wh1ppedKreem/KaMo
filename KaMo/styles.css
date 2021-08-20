@@ -8,7 +8,7 @@ body{
 h1{
     font-size: 100px;
     margin-top: 280px;
-    color: white;
+    color: rgb(255, 95, 95);
 }
 p{
     font-size: 25px;
@@ -17,15 +17,23 @@ p{
 }
 .credits{
     font-size: 12px;
-    margin-top: 404px;
+    margin-top: 220px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
 }
-.image{
-    margin-top: -1000px;
-    margin-bottom: 100px;
-    margin-right: 100px;
-    margin-left: 1400px;
-    border-radius: 25px;
-    height: 500px;
+button{
+    width: 180px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 12px 0;
+    background: #fff;
+    background-color: rgb(255, 95, 95);
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
 }
