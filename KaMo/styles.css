@@ -2,7 +2,7 @@
     font-family: Marker Felt, fantasy;
 }
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/redcamo.jpg);
+    background-color: rgb(34, 34, 34);
     background-size: cover;
 }
 h1{
