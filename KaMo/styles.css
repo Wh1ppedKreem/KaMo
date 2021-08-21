@@ -95,6 +95,10 @@ a {
   background-color: rgb(255, 95, 95);
   transition: 0.3s;
 }
+#collapse:focus{
+  border-color: rgb(255, 205, 205);
+  background-color: rgb(255, 95, 95);;
+}
 
 /* --- Page Wrap --- */
 
@@ -141,7 +145,7 @@ a {
     font-size: 20px;
   }
   .nav-link {
-    padding: 1rem;
+    line-height: 3;
   }
   #collapse {
     display: block;
