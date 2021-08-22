@@ -25,13 +25,10 @@
     margin-top: 165px;
     color: rgb(255, 95, 95);
   }
-  p {
+  .title-md {
     font-size: 2rem;
     margin-top: 70px;
     color: white;
-  }
-  p.dark{
-    color: black;
   }
   .title-md.dark{
     color: black;
@@ -135,6 +132,12 @@
     margin-top: 100px;
     color: white;
     font-family: "Courier New", Courier, monospace;
+  }
+  .credits.dark{
+    font-size: 12px;
+    margin-top: 100px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   /*--- Footer ---*/
