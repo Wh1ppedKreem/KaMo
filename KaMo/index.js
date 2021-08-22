@@ -1,3 +1,37 @@
+    //get localStorage
+    let darkMode = localStorage.getItem("darkMode");
+    const checkbox = document.getElementById('checkbox');
+    
+    function enableDarkMode(){
+        $("body").addClass("dark");
+        $(".title-md").addClass("dark");
+        $(".credits").addClass("dark");
+        $(".btn-lg").addClass("dark");
+
+        localStorage.setItem("darkMode", "enabled");
+    }
+    function disableDarkMode(){
+        $("body").removeClass("dark");
+        $(".title-md").removeClass("dark");
+        $(".credits").removeClass("dark");
+        $(".btn-lg").removeClass("dark");
+
+        localStorage.setItem("darkMode", null);
+    }
+
+    if(darkMode === "enabled"){
+        enableDarkMode();
+    }
+    
+    checkbox.addEventListener('click', () => {
+        darkMode = localStorage.getItem("darkMode");
+        if(darkMode !== "enabled"){
+            enableDarkMode();
+        }else{
+            disableDarkMode();
+        }
+    });
+
 function collapse(){
     var navLinks = $("#nav-links");
     if(navLinks.attr("class") === "nav-links"){
@@ -8,13 +42,3 @@ function collapse(){
         $("#nav-links").addClass("nav-links");
     }
 }
-
-const checkbox = document.getElementById('checkbox');
-
-checkbox.addEventListener('change', () => {
-    //change them of site
-    document.body.classList.toggle('dark');
-    document.querySelector('.title-md').classList.toggle('dark');
-    document.querySelector('.credits').classList.toggle('dark');
-    document.querySelector('.btn-lg').classList.toggle('dark');
-});
