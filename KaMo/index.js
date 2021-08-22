@@ -8,3 +8,13 @@ function collapse(){
         $("#nav-links").addClass("nav-links");
     }
 }
+
+const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', () => {
+    //change them of site
+    document.body.classList.toggle('dark');
+    document.querySelector('p').classList.toggle('dark');
+    document.querySelector('.credits').classList.toggle('dark');
+    document.querySelector('.btn-lg').classList.toggle('dark');
+});
