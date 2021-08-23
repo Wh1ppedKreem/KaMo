@@ -1,8 +1,11 @@
     //get localStorage
     let darkMode = localStorage.getItem("darkMode");
     const checkbox = document.getElementById('checkbox');
+    const darkModeLogo = document.getElementById("bulb-logo");
     
     function enableDarkMode(){
+        $("#bulb-logo").removeClass("far fa-lightbulb");
+        $("#bulb-logo").addClass("fas fa-lightbulb");
         $("body").addClass("dark");
         $(".title-md").addClass("dark");
         $(".credits").addClass("dark");
@@ -11,6 +14,8 @@
         localStorage.setItem("darkMode", "enabled");
     }
     function disableDarkMode(){
+        $("#bulb-logo").removeClass("fas fa-lightbulb");
+        $("#bulb-logo").addClass("far fa-lightbulb");
         $("body").removeClass("dark");
         $(".title-md").removeClass("dark");
         $(".credits").removeClass("dark");
@@ -20,12 +25,13 @@
     }
 
     if(darkMode === "enabled"){
+        checkbox.click();
         enableDarkMode();
     }
     
     checkbox.addEventListener('click', () => {
         darkMode = localStorage.getItem("darkMode");
-        if(darkMode !== "enabled"){
+        if(checkbox.checked){
             enableDarkMode();
         }else{
             disableDarkMode();
