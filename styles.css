@@ -1,0 +1,309 @@
+* {
+  font-family: Marker Felt, fantasy;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(34, 34, 34);
+  background-size: cover;
+  text-align: center;
+  transition: background 0.2s linear;
+}
+body.dark {
+  background-color: white;
+}
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+/*--- Headings ---*/
+.title-lg {
+  font-size: 6rem;
+  margin-top: 165px;
+  color: rgb(255, 95, 95);
+}
+.title-md {
+  font-size: 2rem;
+  margin-top: 70px;
+  color: white;
+}
+.title-md.dark {
+  color: black;
+}
+
+/* --- Page Wrap --- */
+
+.wrapper {
+  margin: 7% 15%;
+}
+
+/*--- Components ---*/
+
+/* Buttons */
+.btn-lg {
+  width: 180px;
+  color: white;
+  font-size: 15px;
+  padding: 12px 0;
+  background-color: transparent;
+  border: 2px solid rgb(255, 95, 95);
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+  transition: 0.3s;
+  margin: 16px 4px;
+}
+.btn-lg.dark {
+  color: rgb(0, 0, 0);
+}
+.btn-lg:hover {
+  background-color: rgb(255, 95, 95);
+  transition: 0.3s;
+}
+
+/*--- Navbar ---*/
+.navbar {
+  background-color: #333333;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.nav-container {
+  margin-right: 50%;
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+.nav-logo {
+  width: 10%;
+  margin: auto 0;
+}
+.nav-links-expand {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  display: block;
+}
+.nav-links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.nav-link {
+  color: white;
+  width: 100%;
+}
+#collapse {
+  border: 1.5px solid rgb(255, 95, 95);
+  border-radius: 7px;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 5px 15px;
+  transition: 0.3s;
+  display: none;
+}
+#collapse:hover {
+  background-color: rgb(255, 95, 95);
+  transition: 0.3s;
+}
+#collapse:focus {
+  border-color: rgb(255, 205, 205);
+  background-color: rgb(255, 95, 95);
+}
+
+/* --- Dark Mode Button --- */
+
+.bulb-logo {
+  transition: 0.5s;
+  text-shadow: 1px 2px 8px #7c7c7c;
+}
+
+.bookmark_ribbon {
+  border-bottom: 20px solid rgb(255, 95, 95);
+  border-top: 20px solid rgb(253, 85, 85);
+  width: 70px;
+  height: 0;
+  border-left: 15px solid transparent;
+  float: right;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: 700;
+  position: fixed;
+  top: 120px;
+}
+.bookmark_ribbon {
+  transition: 0.3s;
+  right: -70px;
+}
+.bookmark_ribbon:hover {
+  transition: 0.3s;
+  right: 0px;
+}
+.bookmark_ribbon_text {
+  color: white;
+  position: relative;
+  top: -11px;
+  right: 10px;
+  text-align: center;
+}
+.checkbox{
+  display: none;
+}
+
+/* --- Dark Mode Slider --- */
+
+.slider{
+  margin: 0;
+  padding: 0;
+}
+.label{
+  background-color: #111;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 5px;
+  height: 26px;
+  width: 50px;
+  margin-left: 100px;
+}
+.fa-moon{
+  color: #f1c40f;
+}
+.fa-sun{
+  color: #f39c12;
+}
+.ball{
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transition: transform 0.2s linear;
+}
+.checkbox-slider:checked + .label .ball{
+  transform: translateX(24px);
+}
+.checkbox-slider{
+  opacity: 0;
+  position: absolute;
+  width: 0%;
+  display: block;
+}
+/* --- Cards --- */
+.card-wrap{
+  margin-top: 5rem;
+  background-color: #333333;
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid black;
+  box-shadow: 1px 1px 20px rgb(19, 19, 19);
+  border-radius: 25px;
+}
+.card-bottom{
+  padding: 2rem;
+}
+.project-image{
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+  shadow
+}
+.project-title {
+  font-size: 2rem;
+  color: white;
+}
+.description{
+  color: white;
+  font-weight: 100;
+}
+
+/*--- Credits ---*/
+.credits {
+  font-size: 12px;
+  margin-top: 100px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+.credits.dark {
+  font-size: 12px;
+  margin-top: 100px;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/*--- Footer ---*/
+.footer {
+  margin-top: 2rem;
+  background-color: #333333;
+  padding: 1.5rem;
+  color: white;
+}
+.copyright {
+  font-size: 12px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* ---Breakpoints--- */
+@media (max-width: 991px) {
+  /*--- Navbar Breakpoints ---*/
+  .navbar {
+    flex-direction: column;
+    padding: 1rem 2.5rem;
+  }
+  .nav-container {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .nav-links {
+    width: 0%;
+    display: none;
+  }
+  .nav-logo {
+    font-size: 20px;
+  }
+  .nav-link {
+    line-height: 3;
+  }
+  .slider{
+    display: none;
+  }
+  #collapse {
+    display: block;
+    margin-left: auto;
+  }
+  /* --- Heading Breakpoints --- */
+  .title-lg {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 750px) {
+  /* --- Heading Breakpoints --- */
+  .title-lg {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 590px) {
+  /* --- Heading Breakpoints --- */
+  .title-lg {
+    font-size: 3rem;
+  }
+  .title-md {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 400px) {
+  /* --- Heading Breakpoints --- */
+  .title-lg {
+    font-size: 2.5rem;
+  }
+}
